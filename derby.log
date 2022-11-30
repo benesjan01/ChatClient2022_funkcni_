@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Nov 30 22:26:26 CET 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0184-ca6f-0d04-00000f68dc08 
+on database directory C:\Users\Jan Beneš\Desktop\ChatClient_funkcni\ChatClientDb_skB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@266474c2 
+Loaded from file:/C:/Users/Jan%20Bene%c5%a1/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.1+9-24
+user.dir=C:\Users\Jan Beneš\Desktop\ChatClient_funkcni
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
