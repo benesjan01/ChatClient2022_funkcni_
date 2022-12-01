@@ -135,7 +135,8 @@ public class MainFrame extends JFrame {
         JPanel panelExport = new JPanel(new FlowLayout(FlowLayout.LEADING));
         btnExport = new JButton("Export do CSV");
         btnExport.addActionListener(e -> {
-           exportDoTxt();
+           exportDoCsv();
+            JOptionPane.showMessageDialog(this, "Chat exported to the project directory");
         });
         panelExport.add(btnExport);
 
@@ -144,12 +145,12 @@ public class MainFrame extends JFrame {
 
         return panelExport;
     }
-    public void exportDoTxt(){
+    public void exportDoCsv(){
         try{
-            PrintWriter pw = new PrintWriter("zpravy.csv");
-            String csv = "Author;Message\n";
+            PrintWriter pw = new PrintWriter("Chat content.csv");
+            String csv = "Author;Time;Message\n";
             for (Message msg : chatClient.getMessages()) {
-                csv += msg.getAuthor() + ";" + msg.getText() + "\n";
+                csv += msg.getAuthor() +";"+ msg.getCreated() + ";" + msg.getText() + "\n";
             }
             pw.println(csv);
             pw.close();
